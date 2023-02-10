@@ -1,7 +1,5 @@
 package lesson1;
 
-/*выглядит, конечно не очень, но так прописано в задании...*/
-
 public class HomeWorkApp {
 
     public static void main(String[] args) {
