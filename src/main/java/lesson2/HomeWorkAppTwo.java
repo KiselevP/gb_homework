@@ -9,11 +9,13 @@ public class HomeWorkAppTwo {
         checkLeapYears(2070);
     }
 
-    public static void limitEntryCheck(int a, int b) {
-        if ((a + b) >=10 && (a + b) <= 20) {
+    public static boolean limitEntryCheck(int a, int b) {
+        if ((a + b) >= 10 && (a + b) <= 20) {
             System.out.println("True");
+            return true;
         } else {
             System.out.println("False");
+            return false;
         }
     }
 
@@ -25,11 +27,13 @@ public class HomeWorkAppTwo {
         }
     }
 
-    public static void checkNumberIsPositive(int a) {
+    public static boolean checkNumberIsPositive(int a) {
         if (a >= 0) {
             System.out.println("False");
+            return false;
         } else {
             System.out.println("True");
+            return true;
         }
     }
 
@@ -39,11 +43,13 @@ public class HomeWorkAppTwo {
         }
     }
 
-    public static void checkLeapYears(int year) {
+    public static boolean checkLeapYears(int year) {
         if ((year % 4) == 0 || (year % 400) == 0 && (year % 100) != 0) {
             System.out.println("True");
+            return true;
         } else {
             System.out.println("False");
+            return false;
         }
     }
 }
