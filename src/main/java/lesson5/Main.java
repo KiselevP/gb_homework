@@ -12,6 +12,7 @@ public class Main {
         arrayEmployee[4] = new Employee("Николаев", "Пётр", "Николаевич", "54", "Дворник", "89289004045", "email5", "50000");
 
         int a = 1;
+        System.out.println("Список сотрудников");
         for (Employee employee : arrayEmployee) {
             if (Integer.parseInt(employee.getAge()) > 40) {
                 System.out.println("Сотрудник " + a + ":" + System.lineSeparator());
