@@ -1,0 +1,75 @@
+package lesson5;
+
+public class Employee {
+    private final String surName;
+    private final String name;
+    private final String lastName;
+    private final String post;
+    private final String phoneNumber;
+    private final String email;
+    private final String salary;
+    private final String age;
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getPost() {
+        return post;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getSalary() {
+        return salary;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public Employee(String surName,
+                    String name,
+                    String lastName,
+                    String age,
+                    String post,
+                    String phoneNumber,
+                    String email,
+                    String salary) {
+        this.surName = surName;
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.post = post;
+        this.phoneNumber = phoneNumber;
+        this.salary = salary;
+        this.age = age;
+    }
+
+    public void getInfoEmployee(Employee employee) {
+        System.out.println(
+                "Фамилия: " + employee.getSurName() + System.lineSeparator() +
+                "Имя: " + employee.getName() + System.lineSeparator() +
+                "Отчество: " + employee.getLastName() + System.lineSeparator() +
+                "Возраст: " + employee.getAge() + System.lineSeparator() +
+                "Должность: " + employee.getPost() + System.lineSeparator() +
+                "Телефон: " + employee.getPhoneNumber() + System.lineSeparator() +
+                "Эл.почта: " + employee.getEmail() + System.lineSeparator() +
+                "Зарплата: " + employee.getSalary() + System.lineSeparator()
+        );
+    }
+}
