@@ -1,6 +1,6 @@
 package lesson5;
 
-public class Employee {
+public class Employee {//вот 5е задание....я не знаю почему оно нормально не добавилось
     private final String surName;
     private final String name;
     private final String lastName;
