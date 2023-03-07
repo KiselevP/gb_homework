@@ -1,6 +1,6 @@
 package lesson5;
 
-public class Main {
+public class Main { //5е задание
 
     public static void main(String[] args) {
         Employee[] arrayEmployee = new Employee[5];
