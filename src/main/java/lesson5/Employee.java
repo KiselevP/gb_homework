@@ -5,10 +5,10 @@ public class Employee {//вот 5е задание....я не знаю поче�
     private final String name;
     private final String lastName;
     private final String post;
-    private final String phoneNumber;
+    private final int phoneNumber;
     private final String email;
     private final String salary;
-    private final String age;
+    private final int age;
 
     public String getSurName() {
         return surName;
@@ -26,7 +26,7 @@ public class Employee {//вот 5е задание....я не знаю поче�
         return post;
     }
 
-    public String getPhoneNumber() {
+    public int getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -38,16 +38,16 @@ public class Employee {//вот 5е задание....я не знаю поче�
         return salary;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
     public Employee(String surName,
                     String name,
                     String lastName,
-                    String age,
+                    int age,
                     String post,
-                    String phoneNumber,
+                    int phoneNumber,
                     String email,
                     String salary) {
         this.surName = surName;
