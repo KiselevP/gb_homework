@@ -71,6 +71,7 @@ public class ApplicationForm extends JFrame {
         }
 
         JButton calc = new OperatorJButton("=");
+        calc.addActionListener(buttonListener);
         digitsPanel.add(calc);
 
         JButton clear = new OperatorJButton("C");
@@ -85,19 +86,19 @@ public class ApplicationForm extends JFrame {
         operatorsPanel.setLayout(new GridLayout(4, 1));
 
         JButton minus = new OperatorJButton("-");
-
+        minus.addActionListener(buttonListener);
         operatorsPanel.add(minus);
 
         JButton plus = new OperatorJButton("+");
-
+        plus.addActionListener(buttonListener);
         operatorsPanel.add(plus);
 
         JButton multiply = new OperatorJButton("x");
-
+        multiply.addActionListener(buttonListener);
         operatorsPanel.add(multiply);
 
         JButton divide = new OperatorJButton("/");
-
+        divide.addActionListener(buttonListener);
         operatorsPanel.add(divide);
 
         return operatorsPanel;
